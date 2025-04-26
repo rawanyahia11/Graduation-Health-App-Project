@@ -55,43 +55,7 @@ class TestsScreen extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
 
-                      Text(
-                        "الكمية",
-                        style: TextStyle(
-                          fontSize:AppSize.fontSize20,
-                          color: AppColors.labelsInDrawerColor,
-                          shadows: [
-                            Shadow(
-                              offset: const Offset(2,2),
-                              blurRadius: 5,
-                              color: Colors.black.withOpacity(0.2), // ظل خفيف
-                            ),
-                          ],
-                        ),
-                      ),
 
-                      const VerticalDivider(
-                        color: AppColors.dividerColor,
-                        width: 10,      // المسافة الأفقية اللي بياخدها الخط
-                        thickness: 1.1,   // سمك الخط نفسه
-                        indent: 5,     // بداية المسافة من فوق
-                        endIndent: 2,
-                      ),
-
-                      Text(
-                        "الإسم",
-                        style: TextStyle(
-                          fontSize:AppSize.fontSize20,
-                          color: AppColors.labelsInDrawerColor,
-                          shadows: [
-                            Shadow(
-                              offset: const Offset(2,2),
-                              blurRadius: 5,
-                              color: Colors.black.withOpacity(0.2), // ظل خفيف
-                            ),
-                          ],
-                        ),
-                      ),
                     ],
                   ),
                 ),
