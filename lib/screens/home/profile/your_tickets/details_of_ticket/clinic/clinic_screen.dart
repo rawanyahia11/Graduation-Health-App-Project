@@ -4,13 +4,12 @@ import 'package:graduation_health_app_project/screens/home/profile/medical_histo
 import 'package:graduation_health_app_project/screens/home/profile/medical_history/details_of_his/clinic/clinic_details/rays.dart';
 import 'package:graduation_health_app_project/screens/home/profile/medical_history/details_of_his/clinic/clinic_details/test.dart';
 import 'package:graduation_health_app_project/screens/home/widgets/material_button_in_clinic_screen.dart';
-
 import '../../../../../../core/constants/colors.dart';
 import '../../../../../../core/constants/sizes.dart';
 import '../../../../../../layout/app_bar/white_app_bar.dart';
 import '../../../../widgets/drawer.dart';
 class ClinicScreen extends StatelessWidget {
-   ClinicScreen({super.key});
+  ClinicScreen({super.key});
 
   final GlobalKey <ScaffoldState> scaffoldKey = GlobalKey<ScaffoldState>();
 
@@ -73,11 +72,11 @@ class ClinicScreen extends StatelessWidget {
                 MaterialButtonInClinicScreen(
                   widthSize: 230,
                   heightSize: 51,
-                    onPressed: (){
-                      Navigator.push(context, MaterialPageRoute(builder: (context)=>const MedicinesScreen()));
-                    },
-                    text: "الروشتة",
-                    textSize: 30 ,
+                  onPressed: (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>const MedicinesScreen()));
+                  },
+                  text: "الروشتة",
+                  textSize: 30 ,
                   image: Image.asset("assets/images/general_photos/medicines/img.png"),
                 ),
 

@@ -6,8 +6,9 @@ class ContainerInDetails extends StatelessWidget {
   final String text ;
   final Widget image ;
   final Widget theData ;
+  final double labelSize ;
 
-  const ContainerInDetails({super.key, required this.text, required this.image, required this.theData});
+  const ContainerInDetails({super.key, required this.text, required this.image, required this.theData, required this.labelSize});
 
   @override
   Widget build(BuildContext context) {
@@ -35,7 +36,7 @@ class ContainerInDetails extends StatelessWidget {
                         Text(
                           text,
                           style: TextStyle(
-                            fontSize:AppSize.fontSize48,
+                            fontSize:labelSize,
                             color: AppColors.labelsInDrawerColor,
                             shadows: [
                               Shadow(
@@ -46,6 +47,8 @@ class ContainerInDetails extends StatelessWidget {
                             ],
                           ),
                         ),
+
+                        const SizedBox(height: 5),
             
                         Expanded(
                           child: Container(

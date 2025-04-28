@@ -4,6 +4,7 @@ import 'package:graduation_health_app_project/core/constants/colors.dart';
 import 'package:graduation_health_app_project/core/constants/sizes.dart';
 import 'package:graduation_health_app_project/core/constants/strings.dart';
 import 'package:graduation_health_app_project/screens/home/profile/medical_history/all_med_his.dart';
+import 'package:graduation_health_app_project/screens/home/profile/your_tickets/all_tickets.dart';
 import 'package:graduation_health_app_project/screens/home/widgets/row_of_profile_info.dart';
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({super.key});
@@ -167,7 +168,7 @@ class ProfileScreen extends StatelessWidget {
                   ),
                   child: const Text(AppStrings.yourTickets,style: TextStyle(fontSize: AppSize.fontSize18, color: AppColors.labelsInProfileColor)),
                   onPressed: (){
-                    //Navigator.push(context, MaterialPageRoute(builder: (context)=>));
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=> AllTickets()));
                   },
                 ),
               ],

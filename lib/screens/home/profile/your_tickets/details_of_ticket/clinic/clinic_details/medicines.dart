@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:graduation_health_app_project/core/constants/colors.dart';
 import 'package:graduation_health_app_project/core/constants/sizes.dart';
-import 'package:graduation_health_app_project/layout/app_bar/main_color_app_bar.dart';
 import 'package:graduation_health_app_project/screens/home/widgets/container_in_details.dart';
 import 'package:graduation_health_app_project/screens/home/widgets/data_list_view_in_details.dart';
 import 'package:graduation_health_app_project/screens/home/widgets/divider_in_details.dart';
+
+import '../../../../../../../layout/app_bar/main_color_app_bar.dart';
 class MedicinesScreen extends StatelessWidget {
   const MedicinesScreen({super.key});
 

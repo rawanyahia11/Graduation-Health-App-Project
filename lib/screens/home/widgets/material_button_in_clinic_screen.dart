@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../core/constants/colors.dart';
 import '../../../core/constants/sizes.dart';
-class MaterialButtonInClinicLabRaysScreens extends StatelessWidget {
+class MaterialButtonInClinicScreen extends StatelessWidget {
 
   final double heightSize ;
   final double widthSize ;
@@ -12,7 +12,7 @@ class MaterialButtonInClinicLabRaysScreens extends StatelessWidget {
   final Widget image ;
 
 
-  const MaterialButtonInClinicLabRaysScreens({super.key, required this.heightSize, required this.widthSize, required this.onPressed, required this.text, required this.image, required this.textSize});
+  const MaterialButtonInClinicScreen({super.key, required this.heightSize, required this.widthSize, required this.onPressed, required this.text, required this.image, required this.textSize});
 
   @override
   Widget build(BuildContext context) {

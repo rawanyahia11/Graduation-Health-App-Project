@@ -1,4 +1,6 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:graduation_health_app_project/core/constants/colors.dart';
 import 'package:graduation_health_app_project/core/constants/sizes.dart';
 class DataListViewInDetails extends StatelessWidget {
@@ -26,14 +28,14 @@ class DataListViewInDetails extends StatelessWidget {
 
                 Text(
                   namesOfItems,
-                  style: const TextStyle(fontSize: AppSize.fontSize18, fontWeight: AppSize.bold, color: AppColors.darkColor),
+                  style: const TextStyle(fontSize: AppSize.fontSize16, fontWeight: AppSize.bold, color: AppColors.darkColor),
                 ),
 
                 const Spacer(),
 
                 Text(
-                  amountOfItem!,
-                  style: const TextStyle(fontSize: AppSize.fontSize20, fontWeight: AppSize.bold, color: AppColors.darkColor),
+                  amountOfItem ?? '',
+                  style: const TextStyle(fontSize: AppSize.fontSize18, fontWeight: AppSize.bold, color: AppColors.darkColor),
                 ),
 
 

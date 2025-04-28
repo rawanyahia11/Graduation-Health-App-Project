@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:graduation_health_app_project/core/constants/app_icons.dart';
 import 'package:graduation_health_app_project/core/constants/static_lists.dart';
 import 'package:graduation_health_app_project/cubits/main_view/main_view_cubit.dart';
 import 'package:graduation_health_app_project/cubits/main_view/main_view_state.dart';
+import 'package:graduation_health_app_project/layout/app_bar/white_app_bar.dart';
 import 'package:graduation_health_app_project/screens/home/widgets/drawer.dart';
 
 import '../../../core/constants/colors.dart';
@@ -22,32 +22,11 @@ class MainViewScreen extends StatelessWidget {
         builder: (context,index) => Scaffold(
           key: scaffoldKey,
           backgroundColor: AppColors.whiteColor,
-          appBar: AppBar(
-            backgroundColor: AppColors.whiteColor,
-            foregroundColor: AppColors.mainColor,
-
-            leading: IconButton(
-              onPressed: (){
-                Navigator.pop(context);
+          appBar: WhiteAppBar(
+              showBackButton: false,
+              onMenuPressed: (){
+                scaffoldKey.currentState?.openEndDrawer();
               },
-              icon: const Icon(AppIcons.arrow1),
-            ),
-
-            actions: [
-              Container(
-                padding: const EdgeInsets.symmetric(vertical: 12),
-                child: Image.asset(
-                  "assets/images/auth/img.png",
-                ),
-              ),
-              IconButton(
-                onPressed:(){
-                  scaffoldKey.currentState?.openEndDrawer();
-                },
-
-                icon: const Icon(AppIcons.menu),
-              ),
-            ],
           ),
 
           endDrawer: TheDrawer(

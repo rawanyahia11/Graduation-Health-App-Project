@@ -2,12 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:graduation_health_app_project/core/constants/colors.dart';
 import 'package:graduation_health_app_project/core/constants/sizes.dart';
 import 'package:graduation_health_app_project/screens/home/widgets/container_in_details.dart';
-import 'package:graduation_health_app_project/screens/home/widgets/divider_in_details.dart';
 
 import '../../../../../../../layout/app_bar/main_color_app_bar.dart';
-import '../../../../../widgets/data_list_view_in_details.dart';
-class RaysScreen extends StatelessWidget {
-  const RaysScreen({super.key});
+class Rays extends StatelessWidget {
+  const Rays({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -18,8 +16,8 @@ class RaysScreen extends StatelessWidget {
       ),
 
       body: ContainerInDetails(
-        text: 'الأشعة',
-        labelSize:  AppSize.fontSize48,
+        text: 'أشعة سينية',
+        labelSize: AppSize.fontSize48,
         image: Image.asset("assets/images/general_photos/rays/img.png"),
         theData: Padding(
             padding: const EdgeInsets.all(AppSize.paddingAll15),
@@ -27,7 +25,7 @@ class RaysScreen extends StatelessWidget {
               children: [
 
                 Text(
-                  "الإسم",
+                  "النتيجة",
                   style: TextStyle(
                     fontSize:AppSize.fontSize24,
                     color: AppColors.labelsInDrawerColor,
@@ -43,12 +41,8 @@ class RaysScreen extends StatelessWidget {
 
                 const SizedBox(height: AppSize.sizedBoxHeight20),
 
-                const DataListViewInDetails(
-                  padding: EdgeInsets.only(right: 15),
-                  separatedItem: DividerInDetails(),
-                  itemsCount: 10 ,
-                  namesOfItems: "CT Scan",
-                )
+                Image.asset("assets/images/general_photos/rays/img_1.png",width: 227,height: 211,),
+
 
               ],
             )

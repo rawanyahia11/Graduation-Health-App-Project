@@ -6,8 +6,8 @@ import 'package:graduation_health_app_project/screens/home/widgets/divider_in_de
 
 import '../../../../../../../layout/app_bar/main_color_app_bar.dart';
 import '../../../../../widgets/data_list_view_in_details.dart';
-class RaysScreen extends StatelessWidget {
-  const RaysScreen({super.key});
+class DiagnosisScreen extends StatelessWidget {
+  const DiagnosisScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -18,9 +18,9 @@ class RaysScreen extends StatelessWidget {
       ),
 
       body: ContainerInDetails(
-        text: 'الأشعة',
+        text: 'التشخيص',
         labelSize:  AppSize.fontSize48,
-        image: Image.asset("assets/images/general_photos/rays/img.png"),
+        image: Image.asset("assets/images/general_photos/diagnosis/img.png"),
         theData: Padding(
             padding: const EdgeInsets.all(AppSize.paddingAll15),
             child: Column(
@@ -47,9 +47,8 @@ class RaysScreen extends StatelessWidget {
                   padding: EdgeInsets.only(right: 15),
                   separatedItem: DividerInDetails(),
                   itemsCount: 10 ,
-                  namesOfItems: "CT Scan",
+                  namesOfItems: "Food poisoning Case",
                 )
-
               ],
             )
         ),

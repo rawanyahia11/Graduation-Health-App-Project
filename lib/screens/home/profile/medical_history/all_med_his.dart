@@ -4,6 +4,7 @@ import 'package:graduation_health_app_project/core/constants/strings.dart';
 import 'package:graduation_health_app_project/screens/home/profile/medical_history/one_his.dart';
 import '../../../../core/constants/app_icons.dart';
 import '../../../../core/constants/colors.dart';
+import '../../../../layout/app_bar/white_app_bar.dart';
 import '../../widgets/drawer.dart';
 class AllMedHis extends StatelessWidget {
    AllMedHis({super.key});
@@ -15,32 +16,11 @@ class AllMedHis extends StatelessWidget {
     return  Scaffold(
       key: scaffoldKey,
       backgroundColor: AppColors.whiteColor,
-      appBar: AppBar(
-        backgroundColor: AppColors.whiteColor,
-        foregroundColor: AppColors.mainColor,
-
-        leading: IconButton(
-          onPressed: (){
-            Navigator.pop(context);
-          },
-          icon: const Icon(AppIcons.arrow1),
-        ),
-
-        actions: [
-          Container(
-            padding: const EdgeInsets.symmetric(vertical: 12),
-            child: Image.asset(
-              "assets/images/auth/img.png",
-            ),
-          ),
-          IconButton(
-            onPressed:(){
-              scaffoldKey.currentState?.openEndDrawer();
-            },
-
-            icon: const Icon(AppIcons.menu),
-          ),
-        ],
+      appBar: WhiteAppBar(
+        showBackButton: true,
+        onMenuPressed: (){
+          scaffoldKey.currentState?.openEndDrawer();
+        },
       ),
 
       endDrawer: TheDrawer(name: "محمد أحمد", id: "30312011623222", profilePhoto: Image.asset("assets/images/profile/profile_photo/img.png"),),
@@ -63,7 +43,7 @@ class AllMedHis extends StatelessWidget {
               ),
             ),
 
-            const SizedBox(height: AppSize.sizedBoxHeight30,),
+            const SizedBox(height: AppSize.sizedBoxHeight15),
 
             Expanded(
               child: Padding(
