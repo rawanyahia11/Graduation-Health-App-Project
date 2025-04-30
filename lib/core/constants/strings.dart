@@ -14,7 +14,7 @@ class AppStrings{
   static const String reservations = "الحجوزات";
   static const String notifications = "الإشعارات";
   static const String requirements = "المستلزمات المطلوبة";
-  static const String logout = "تسجيل الدخول";
+  static const String logout = "تسجيل الخروج";
 
   static const String medHis = "التاريخ الطبي";
   static const String yourTickets = "تذاكرك";

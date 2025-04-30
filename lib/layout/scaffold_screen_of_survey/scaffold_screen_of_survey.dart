@@ -51,8 +51,6 @@ class ScaffoldScreenOfSurvey extends StatelessWidget {
                   textAlign: TextAlign.center,
                 ),
 
-                const SizedBox(height: AppSize.sizedBoxHeight10,),
-
                 Expanded(child: widget1),
 
                 widget2

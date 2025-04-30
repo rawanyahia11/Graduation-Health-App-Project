@@ -8,8 +8,27 @@ import 'package:graduation_health_app_project/screens/home/widgets/drawer.dart';
 
 import '../../../core/constants/colors.dart';
 import '../../../core/constants/sizes.dart';
-class MainViewScreen extends StatelessWidget {
-    const MainViewScreen({super.key});
+class MainViewScreen extends StatefulWidget {
+
+    final int initialIndex;
+
+    const MainViewScreen({super.key,this.initialIndex = 1 });
+
+  @override
+  State<MainViewScreen> createState() => _MainViewScreenState();
+}
+
+class _MainViewScreenState extends State<MainViewScreen> {
+
+  @override
+  void initState() {
+    super.initState();
+
+    // عشان نغير البوتوم ناف انديكس بعد أول بناء للشاشة
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      BlocProvider.of<MainViewCubit>(context).changeBottomNavIndex(index: widget.initialIndex);
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -69,5 +88,4 @@ class MainViewScreen extends StatelessWidget {
         ),
     );
   }
-
 }

@@ -193,7 +193,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                 MaterialButtonWidgetInAuth(
                   padding: const EdgeInsets.symmetric(horizontal: AppSize.paddingHorizontal80),
                     onPressed: (){
-                      Navigator.push(context, MaterialPageRoute(builder: (context)=> const SurveyScreen1()));
+                      Navigator.push(context, MaterialPageRoute(builder: (context)=> SurveyScreen1()));
                     },
                     color: AppColors.mainColor,
                     textColor: AppColors.whiteColor,

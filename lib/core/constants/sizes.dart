@@ -20,12 +20,17 @@ class AppSize{
   static const double sizedBoxHeight20 = 20 ;
   static const double sizedBoxHeight15 = 15 ;
   static const double sizedBoxHeight10 = 10 ;
+  static const double sizedBoxHeight8 = 8 ;
+  static const double sizedBoxHeight5 = 5 ;
   static const double sizedBoxWidth5 = 5 ;
   static const double sizedBoxWidth15 = 15 ;
   static const double sizedBoxWidth20 = 20 ;
+  static const double sizedBoxWidth30 = 30 ;
+
 
 
   static const double radius5 = 5 ;
+  static const double radius8 = 8 ;
   static const double radius10 = 10 ;
   static const double radius16 = 16 ;
   static const double radius30 = 30 ;
@@ -34,6 +39,7 @@ class AppSize{
 
   static const double width1 = 1 ;
   static const double width2 = 2 ;
+  static const double width5 = 5 ;
   static const double width14 = 14 ;
   static const double width24 = 24 ;
 
@@ -41,6 +47,7 @@ class AppSize{
   static const double height24 = 24 ;
   static const double height31 = 31 ;
 
+  static const double paddingAll5 = 5 ;
   static const double paddingAll10 = 10 ;
   static const double paddingAll15 = 15 ;
   static const double paddingAll20 = 20 ;

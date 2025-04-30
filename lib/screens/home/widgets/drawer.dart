@@ -3,6 +3,7 @@ import 'package:graduation_health_app_project/core/constants/app_icons.dart';
 import 'package:graduation_health_app_project/core/constants/colors.dart';
 import 'package:graduation_health_app_project/core/constants/sizes.dart';
 import 'package:graduation_health_app_project/core/constants/strings.dart';
+import 'package:graduation_health_app_project/screens/auth/first_screen/first_screen.dart';
 import 'package:graduation_health_app_project/screens/home/widgets/divider.dart';
 import 'package:graduation_health_app_project/screens/home/widgets/list_tile_in_drawer.dart';
 class TheDrawer extends StatelessWidget {
@@ -94,7 +95,9 @@ class TheDrawer extends StatelessWidget {
                 icon: AppIcons.logout,
                 iconsColor: AppColors.errorColor,
                 onTap: (){
-                  //Navigator.push(context, MaterialPageRoute(builder: (context)=>));
+                  //Navigator.push(context, MaterialPageRoute(builder: (context)=> const FirstScreen()));
+
+                  Navigator.pushAndRemoveUntil(context, MaterialPageRoute(builder: (context) => const FirstScreen()), (Route<dynamic> route) => false);
                 }
             ),
 
