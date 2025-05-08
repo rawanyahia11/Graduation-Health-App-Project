@@ -12,15 +12,14 @@ class TextFormFieldInSurvey extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 35,
+      //height: 35,
       width: width,
       child: TextFormField(
-        textAlignVertical: TextAlignVertical.center,
         keyboardType: TextInputType.number,
-        cursorHeight: 20,
+        cursorHeight: 10,
         cursorWidth: 1,
         cursorColor: AppColors.dateAndTimeColor,
-
+        textDirection: TextDirection.ltr,
         decoration: InputDecoration(
           fillColor: AppColors.whiteColor,
           filled: true,

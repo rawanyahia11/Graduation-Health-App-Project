@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:graduation_health_app_project/core/constants/colors.dart';
 import 'package:graduation_health_app_project/core/constants/sizes.dart';
 import 'package:graduation_health_app_project/layout/app_bar/main_color_app_bar.dart';
-import 'package:graduation_health_app_project/screens/home/widgets/container_in_details.dart';
+import 'package:graduation_health_app_project/screens/home/widgets/container_in_details_of_profile.dart';
 import 'package:graduation_health_app_project/screens/home/widgets/data_list_view_in_details.dart';
 import 'package:graduation_health_app_project/screens/home/widgets/divider_in_details.dart';
 class MedicinesScreen extends StatelessWidget {
@@ -16,7 +16,12 @@ class MedicinesScreen extends StatelessWidget {
           titleText: "تفاصيل"
       ),
 
-      body: ContainerInDetails(
+      body: ContainerInDetailsOfProfile(
+        outerContainerColor: AppColors.lighterColor3,
+        innerContainerColor: AppColors.lighterColor,
+        sideOfInnerContainerColor: AppColors.mainColor,
+        innerContainerWidth: 268,
+        innerContainerHeight: 373,
         text: 'الأدوية',
         labelSize:  AppSize.fontSize48,
         image: Image.asset("assets/images/general_photos/medicines/img.png"),

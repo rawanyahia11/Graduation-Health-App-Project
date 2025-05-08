@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:graduation_health_app_project/core/constants/app_images.dart';
 import 'package:graduation_health_app_project/core/constants/sizes.dart';
+import 'package:graduation_health_app_project/screens/home/new_reservation/details/rays.dart';
+import 'package:graduation_health_app_project/screens/home/new_reservation/details/specialization.dart';
+import 'package:graduation_health_app_project/screens/home/new_reservation/details/tests.dart';
 import 'package:graduation_health_app_project/screens/home/widgets/material_button_in_new_reservation.dart';
 class NewReservationScreen extends StatelessWidget {
   const NewReservationScreen({super.key});
@@ -27,7 +30,7 @@ class NewReservationScreen extends StatelessWidget {
               children: [
                 MaterialButtonWidgetInNewReservation(
                     onPressed: (){
-                      //Navigator.push(context, MaterialPageRoute(builder: (context)=>));
+                      Navigator.push(context, MaterialPageRoute(builder: (context)=> const SpecializationsScreen()));
                     },
                     image: Image.asset("assets/images/home_photos/new_reservation_photos/img.png"),
                     text: "عيادات"
@@ -37,7 +40,7 @@ class NewReservationScreen extends StatelessWidget {
 
                 MaterialButtonWidgetInNewReservation(
                     onPressed: (){
-                      //Navigator.push(context, MaterialPageRoute(builder: (context)=>));
+                      Navigator.push(context, MaterialPageRoute(builder: (context)=> const TestsScreen()));
                     },
                     image: Image.asset("assets/images/home_photos/new_reservation_photos/img_1.png"),
                     text: "تحاليل"
@@ -52,7 +55,7 @@ class NewReservationScreen extends StatelessWidget {
               children: [
                 MaterialButtonWidgetInNewReservation(
                     onPressed: (){
-                      //Navigator.push(context, MaterialPageRoute(builder: (context)=>));
+                      Navigator.push(context, MaterialPageRoute(builder: (context)=> const RaysScreen()));
                     },
                     image: Image.asset("assets/images/home_photos/new_reservation_photos/img_2.png"),
                     text: "أشعة"

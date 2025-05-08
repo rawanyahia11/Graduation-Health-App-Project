@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:graduation_health_app_project/core/constants/colors.dart';
 import 'package:graduation_health_app_project/core/constants/sizes.dart';
@@ -34,7 +33,7 @@ class ContainerWithDataInDetailsOfReservation extends StatelessWidget {
                   Container(
                     margin: const EdgeInsets.all(AppSize.paddingAll25),
                     decoration: BoxDecoration(
-                      color: AppColors.lighterColor3,
+                      color: AppColors.lighterColor2,
                       borderRadius: const BorderRadius.all(Radius.circular(AppSize.radius10)),
                     ),
 
@@ -67,7 +66,7 @@ class ContainerWithDataInDetailsOfReservation extends StatelessWidget {
                             decoration: BoxDecoration(
                                 color: AppColors.lighterColor,
                                 borderRadius: const BorderRadius.all(Radius.circular(AppSize.radius10)),
-                                border: Border.all(color: AppColors.mainColor,width: AppSize.width1 )
+                                border: Border.all(color: AppColors.sideOfContainerColor,width: AppSize.width1 )
                             ),
 
                             child: Padding(

@@ -6,6 +6,7 @@ class AppColors{
   static const Color lightBlueColor = Color(0xff80B3B8);
   static const Color whiteColor = Color(0xffFFFFFF);
   static const Color darkBlueColor = Color(0xff003F5F);
+  static const Color lighterDarkBlueColor = Color(0xff004080);
   static const Color selectedIconColor = Color(0xffE8EC16);
   static const Color locationColor = Color(0xffFF6F00);
   static const Color locationAndEditIconColor = Color(0xffFFBF4D);
@@ -17,6 +18,7 @@ class AppColors{
   static const Color darkColor = Color(0xff000000);
   static const Color availableColor = Color(0xff36B608);
   static const Color redColorInBookScreen = Color(0xffE44A63);
+  static const Color redColorInNotifications = Color(0xffD7443A);
   static const Color borderSideColor = Color(0xff5483B3);
   static  Color bigContainerColor = const Color(0xff0E88AD).withOpacity(0.2);
   static  Color smallContainerColor = const Color(0xff003F5F).withOpacity(0.2);

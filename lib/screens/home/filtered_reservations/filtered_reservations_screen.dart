@@ -43,10 +43,10 @@ class _FilteredReservationScreenState extends State<FilteredReservationScreen> {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children:
                 List.generate(
-                    labelsOfNavigationContainers.length ,
+                    labelsOfNavigationContainersInReservation.length ,
                     (index) =>
                         NavigationContainer(
-                            labelText: labelsOfNavigationContainers[index],
+                            labelText: labelsOfNavigationContainersInReservation[index],
                             isSelected: selectedIndex == index ,
                             onTap: (){
                               setState(() {

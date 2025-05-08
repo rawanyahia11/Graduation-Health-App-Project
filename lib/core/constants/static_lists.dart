@@ -6,7 +6,11 @@ import 'package:graduation_health_app_project/screens/home/filtered_reservations
 import 'package:graduation_health_app_project/screens/home/filtered_reservations/filtered_reservations_screen.dart';
 import 'package:graduation_health_app_project/screens/home/new_reservation/new_reservation_screen.dart';
 import 'package:graduation_health_app_project/screens/home/profile/profile_screen.dart';
+import 'package:graduation_health_app_project/screens/home/requirements/details/medicines/prescriptions_list_view.dart';
+import 'package:graduation_health_app_project/screens/home/requirements/details/rays/rays_list_view.dart';
 import 'package:graduation_health_app_project/screens/home/reservations/reservations.dart';
+
+import '../../screens/home/requirements/details/tests/tests_list_view.dart';
 
 
 const List surveyQ = [
@@ -87,7 +91,7 @@ const List<Widget> navigationScreens = [
 
 //******************************************************************************
 
-const List<String> labelsOfNavigationContainers = [
+const List<String> labelsOfNavigationContainersInReservation = [
   "عيادات",
   "م أشعة",
   "م تحاليل",
@@ -101,7 +105,21 @@ const List<Widget> listViewsInReservation = [
 
 //******************************************************************************
 
-const List<String> specializationsName = [
+const List<String> labelsOfNavigationContainersInRequirements = [
+  "أدوية",
+  "أشعة",
+  "تحاليل",
+];
+
+const List<Widget> listViewsInRequirements = [
+  PrescriptionsListView(),
+  RaysListView(),
+  TestsListView()
+];
+
+//******************************************************************************
+
+const List<String> specializationsNames = [
   "أطفال و حديثي الولادة",
   "جلدية",
   "نساء و توليد",
@@ -118,14 +136,14 @@ const List<String> specializationsName = [
 
 ];
 
-const List specializationsIcons =[
+const List<String> specializationsIcons =[
   "assets/icons/home/specialization/img.png",
   "assets/icons/home/specialization/img_1.png",
-  "assets/icons/home/specialization/img_1.png",
+  "assets/icons/home/specialization/img_2.png",
   "assets/icons/home/specialization/img_3.png",
   "assets/icons/home/specialization/img_4.png",
   "assets/icons/home/specialization/img_5.png",
-  "assets/icons/home/specialization/img_1.png",
+  "assets/icons/home/specialization/img_6.png",
   "assets/icons/home/specialization/img_7.png",
   "assets/icons/home/specialization/img_8.png",
   "assets/icons/home/specialization/img_9.png",
@@ -139,7 +157,7 @@ const List specializationsIcons =[
 //******************************************************************************
 
 
-const List<String> testsName = [
+const List<String> testsNames = [
   "فحص الكوليسترول والدهون الثلاثية",
   "سيولة الدم",
   "صورة الدم الكاملة",
@@ -150,14 +168,14 @@ const List<String> testsName = [
 
 ];
 
-const List testsIcons =[
+const List<String> testsIcons =[
   "assets/icons/home/test/img.png",
   "assets/icons/home/test/img_1.png",
-  "assets/icons/home/test/img_1.png",
+  "assets/icons/home/test/img_2.png",
   "assets/icons/home/test/img_3.png",
   "assets/icons/home/test/img_4.png",
   "assets/icons/home/test/img_5.png",
-  "assets/icons/home/test/img_1.png",
+  "assets/icons/home/test/img_6.png",
 
 ];
 
@@ -165,7 +183,7 @@ const List testsIcons =[
 //******************************************************************************
 
 
-const List<String> xRaysName = [
+const List<String> raysNames = [
   "الرنين المغناطيسي",
   "الأشعة المقطعية",
   "المسح الذري",
@@ -180,14 +198,14 @@ const List<String> xRaysName = [
 
 ];
 
-const List xRaysIcons =[
+const List<String> raysIcons =[
   "assets/icons/home/x-rays/img.png",
   "assets/icons/home/x-rays/img_1.png",
-  "assets/icons/home/x-rays/img_1.png",
+  "assets/icons/home/x-rays/img_2.png",
   "assets/icons/home/x-rays/img_3.png",
   "assets/icons/home/x-rays/img_4.png",
   "assets/icons/home/x-rays/img_5.png",
-  "assets/icons/home/x-rays/img_1.png",
+  "assets/icons/home/x-rays/img_6.png",
   "assets/icons/home/x-rays/img_7.png",
   "assets/icons/home/x-rays/img_8.png",
   "assets/icons/home/x-rays/img_9.png",

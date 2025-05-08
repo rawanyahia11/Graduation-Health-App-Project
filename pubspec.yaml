@@ -32,6 +32,8 @@ dependencies:
   flutter:
     sdk: flutter
 
+  flutter_multi_formatter: ^2.13.7
+
   flutter_localizations:
     sdk: flutter
 

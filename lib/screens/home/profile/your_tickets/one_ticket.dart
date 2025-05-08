@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:graduation_health_app_project/core/constants/sizes.dart';
 import 'package:graduation_health_app_project/screens/home/profile/medical_history/details_of_his/clinic/clinic_screen.dart';
-import 'package:graduation_health_app_project/screens/home/widgets/divider.dart';
-import '../../../../core/constants/app_icons.dart';
 import '../../../../core/constants/colors.dart';
 import '../../../../layout/app_bar/white_app_bar.dart';
 import '../../widgets/drawer.dart';
