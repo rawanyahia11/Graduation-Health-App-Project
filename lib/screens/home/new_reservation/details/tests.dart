@@ -11,7 +11,7 @@ class TestsScreen extends StatelessWidget {
 
     return Scaffold(
       appBar: const MainColorAppBar(
-          titleText: "الأشعة"
+          titleText: "التحاليل"
       ),
 
       body: ListViewForNewReservation(
